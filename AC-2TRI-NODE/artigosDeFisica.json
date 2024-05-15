@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "Esther Tozzo",
+    "email": "tozzo.est@gmail.com",
+    "titulo": "A Teoria da Relatividade: Desvendando os Segredos do Espaço e do Tempo",
+    "texto": "Proposta por Albert Einstein no início do século XX, a Teoria da Relatividade revolucionou nossa compreensão do universo. A Teoria da Relatividade Especial descreve o comportamento de corpos em movimento rápido ou em campos gravitacionais intensos, enquanto a Teoria da Relatividade Geral relaciona a geometria do espaço-tempo à distribuição de matéria e energia. Essas teorias têm importantes aplicações práticas, como a previsão da existência de buracos negros e a explicação da curvatura da luz em torno de objetos massivos."
+  },
+  {
+    "nome": "esther",
+    "email": "exemplo@gmail.com",
+    "titulo": "A Física Quântica: Explorando o Mundo das Partículas Subatômicas",
+    "texto": "A Física Quântica é o ramo da Física que estuda o comportamento das partículas subatômicas, como elétrons e fótons, em escalas muito pequenas. Ela desafia nossa intuição clássica, introduzindo conceitos como a dualidade onda-partícula, o princípio da incerteza e a superposição quântica. A Física Quântica tem aplicações em diversas áreas, incluindo a computação quântica, a criptografia e a nanotecnologia."
+  }
+]

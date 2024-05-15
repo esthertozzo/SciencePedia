@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand me-auto" href="index.html">Science<span>Pedia</span></a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SciencePedia</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Exibir todos os Artigos de
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="http://localhost:3000/artigos/biologia">Biologia</a></li>
+      <li><a class="dropdown-item" href="http://localhost:3000/artigos/quimica">Química</a></li>
+      <li><a class="dropdown-item" href="http://localhost:3000/artigos/fisica">Física</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Filtar Artigos por Categoria
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="filtrarBiologia.html">Biologia</a></li>
+                <li><a class="dropdown-item" href="filtrarQuimica.html">Química</a></li>
+                <li><a class="dropdown-item" href="filtrarFisica.html">Física</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Excluir Artigo de
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="excluirArtigoBiologia.html">Biologia</a></li>
+      <li><a class="dropdown-item" href="excluirArtigoQuimica.html">Química</a></li>
+      <li><a class="dropdown-item" href="excluirArtigoFisica.html">Física</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Atualizar Artigo de
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="atualizarBio.html">Biologia</a></li>
+      <li><a class="dropdown-item" href="atualizarQui.html">Química</a></li>
+      <li><a class="dropdown-item" href="atualizarFisi.html">Física</a></li>
+              </ul>
+            </li>
+
+          </ul>
+
+          <!-- Barra de Pesquisa -->
+          <!-- <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+
+        </div>
+      </div>
+      <!-- <button type= "button" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-whatever="@mdo" class="login__button">Login</button> -->
+      <!-- <button type= "button" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-whatever="@mdo" class="login__button">Seja Bem-Vindo!</button>  -->
+      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero__section">
+    <div class="container">
+      <h2 class="fw-border">Explore a <span>Ciência</span>.</h2>
+      <h5 class="pt-1 pb-2">Onde a Ciência Ganha Vida: Uma <cite>Enciclopédia Online</cite> para Biologia, Química, Física e Mais!</h5>
+      <!-- <a href="cadastro.html"><button type="button" class="botao__container btn btn-dark">Cadastre-se</button></a> -->
+    </div>
+    <img class="img-hero" src="img/img-banner.png" alt="banner">
+  </section>
+
+  <!-- <div>
+    <img src="img/fundo.png"  class="d-block w-100" alt="fundo">
+  </div> -->
+
+  <main>
+    <section class="categ py-5">
+      <div class="conteiner1">
+        <div class="text-center my-5">
+          <h1>Catego<span>rias</span></h1>
+          <hr class="w-25 m-auto">
+        </div>
+        <div class="cards1 row ms-5 me-5">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 px-2">
+            <div class="card">
+              <div class="card-body">
+               <i><img src="img/icons8-hélice-de-dna-48.png" alt=""></i>
+                <h5 class="card-title"><span class="fw-bold">Biologia</span></h5>
+                <p class="card-text">Biologia é a ciência responsável por estudar a vida em todos os seus aspectos.</p>
+                <a href="http://localhost:3000/artigos/biologia" class="btn__card btn btn-primary">Artigos Biologia</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 px-2">
+            <div class="card">
+              <div class="card-body">
+                <i><img src="img/icons8-garrafa-inferior-redonda-48.png" alt=""></i>
+                <h5 class="card-title"><span class="fw-bold">Química</span></h5>
+                <p class="card-text">A Química é um ramo das Ciências da Natureza que estuda a matéria e suas propriedades.</p>
+                <a href="http://localhost:3000/artigos/quimica" class="btn__card btn btn-primary">Artigos Química</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 px-2">
+            <div class="card ">
+              <div class="card-body">
+                <i><img src="img/icons8-física-48.png" alt=""></i>
+                <h5 class="card-title"><span class="fw-bold">Física</span></h5>
+                <p class="card-text">A Física é a área das ciências naturais que estuda os fenômenos que acontecem com a matéria.</p>
+                <a href="http://localhost:3000/artigos/fisica" class="btn__card btn btn-primary">Artigos Física</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="principais__artig py-5 mt-5">
+        <div class="conteiner2">
+          <div class="text-center my-5 ">
+            <h1>Principais <span>Artigos</span></h1>
+            <hr  class="w-50 m-auto">
+          </div>
+          <div class="card__artig card mb-3 p-5 ms-5 me-5">
+            <div class=" row g-0">
+              <div class="col-md-4">
+                <img src="img/uma-pessoa-caminhando-no-pico-da-montanha-admirando-a-via-lactea-gerada-por-ia_24640-93611.avif" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body px-5">
+                  <h5 class="card-title">Os Mistérios do Universo: Uma Jornada pela Física Cosmológica</h5>
+                  <p class="card-text">A física cosmológica nos leva a uma jornada intrigante pelo cosmos, buscando compreender os mistérios do universo. Neste artigo, exploramos teorias e descobertas que nos ajudam a entender a origem, a evolução e a natureza fundamental do universo, desde a mecânica quântica até a teoria da relatividade, revelando a beleza e a complexidade do cosmos.</p>
+                  <p class="card-text"><small class="text-body-secondary">FÍSICA</small></p>
+                  <a href="artigoFisica.html" class="btn__card btn btn-primary">Adicionar meu Artigo de Física</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card mb-3 p-5 ms-5 me-5">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/conceito-de-estrutura-de-dna-de-helice-humana-na-cor-azul_90220-1399.jpg" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body px-5">
+                  <h5 class="card-title">A Fascinante Complexidade do DNA: A Base da Vida</h5>
+                  <p class="card-text">O DNA, ou ácido desoxirribonucleico, é a molécula fundamental que carrega a informação genética de todos os seres vivos. Neste artigo, mergulhamos na fascinante complexidade do DNA, explorando sua estrutura, função e importância na hereditariedade e na diversidade da vida na Terra.</p>
+                  <p class="card-text"><small class="text-body-secondary">BIOLOGIA</small></p>
+                  <a href="artigoBiologia.html" class="btn__card btn btn-primary">Adicionar meu Artigo de Biologia</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 p-5 ms-5 me-5">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/o-copo-de-coquetel-multicolorido-reflete-a-iluminacao-vibrante-da-boate-gerada-pela-ia_188544-44392.jpg" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body px-5">
+                  <h5 class="card-title">A Importância dos Elementos Químicos na Vida Cotidiana</h5>
+                  <p class="card-text">Desde os alimentos que consumimos até os materiais que utilizamos em nossa rotina diária, os elementos químicos desempenham um papel fundamental em nossas vidas. Este artigo explora a relevância dos elementos químicos na vida cotidiana, destacando sua presença em diversos aspectos do nosso dia a dia, desde a água que bebemos até os produtos de limpeza que utilizamos em nossas casas.</p>
+                  <p class="card-text"><small class="text-body-secondary">QUÍMICA</small></p>
+                  <a href="artigoQuimica.html" class="btn__card btn btn-primary">Adicionar meu Artigo de Química</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog"> 
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">  
+                      <h4 class="modal-title">Bem-Vindo(a)!</h4> 
+                  </div>
+                  <div class="modal-body"> 
+                    <p>Aqui oferecemos informações detalhadas
+                      sobre vários campos da ciência, como biologia, química, física, etc. Você pode adicionar
+                      novos artigos, filtrar o conteúdo com base em diferentes categorias ou ver todos os artigos
+                      cadastrados!</p>
+                  </div>
+                  <div class="modal-footer"> 
+                    <button type="button" class="btn_fechar_modal btn btn-secondary" data-bs-dismiss="modal">Fechar</button>               
+                  </div>
+              </div>
+          </div>
+      </div> 
+    
+      <!-- <section class="section-1">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="pray">
+                <img src="img/" alt="Pray" class="" />
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="panel text-left">
+                <h1>Mr. Devid Smith</h1>
+                <p class="pt-4">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere iure adipisci harum ducimus accusantium, repudiandae aperiam
+                  voluptatum, id ex ratione omnis reiciendis possimus officiis.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae, tenetur quidem eum aliquid vel labore sint placeat
+                  ad deserunt consectetur fugit ullam. Eius unde neque ducimus obcaecati ipsum quos vero totam recusandae hic
+                  expedita nemo sit, illum harum. Quisquam impedit ullam itaque facere et ad molestiae quod reprehenderit excepturi!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <div class="text-center my-5 ">
+        <h1>Perguntas <span>Frequentes</span></h1>
+        <hr  class="w-50 m-auto">
+      </div>
+      <div class="accordion ms-5 me-5" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Como posso acessar os artigos científicos mencionados neste site?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Você pode acessar os artigos científicos mencionados neste site de diversas maneiras. Alguns artigos podem estar disponíveis gratuitamente para leitura online, enquanto outros podem requerer uma assinatura ou pagamento para acessá-los através de periódicos científicos ou bibliotecas online. Além disso, você pode encontrar alguns artigos disponíveis em repositórios de acesso aberto, como o <strong>PubMed Central</strong> ou o <strong>arXiv</strong>. Certifique-se de verificar as opções de acesso disponíveis para cada artigo específico mencionado no site.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Como posso avaliar a qualidade e credibilidade dos artigos científicos mencionados neste site?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Para avaliar a qualidade e credibilidade dos artigos científicos mencionados neste site, é importante considerar a <strong>fonte da publicação</strong>, o rigor do processo de revisão por pares, a reputação dos autores e a relevância do trabalho para a comunidade científica. Procure por artigos publicados em periódicos científicos respeitáveis e revisados por pares. Além disso, verifique se os autores são especialistas no campo e se o artigo foi citado ou referenciado por outros trabalhos científicos, o que pode indicar sua importância e impacto na área.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Posso utilizar os artigos científicos mencionados neste site para minha pesquisa ou trabalho acadêmico?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              O uso dos artigos científicos mencionados neste site para sua pesquisa ou trabalho acadêmico pode depender das políticas de direitos autorais e uso justo de cada publicação. É recomendável verificar as políticas de uso e citação de cada artigo específico mencionado no site, bem como atribuir corretamente a autoria e a fonte ao utilizar qualquer informação proveniente desses artigos. Em alguns casos, pode ser necessário obter permissão dos autores ou editores para reproduzir ou redistribuir o conteúdo dos artigos. Certifique-se de seguir as diretrizes éticas e legais ao utilizar os recursos mencionados neste site para sua pesquisa ou trabalho acadêmico.
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </main>
+
+  <footer>
+    <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">© 2024 Esther, Yasmim e Duda 2EMIA</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="http://localhost:3000/artigos/biologia" class="nav-link px-2 text-muted">Biologia</a></li>
+      <li class="nav-item"><a href="http://localhost:3000/artigos/quimica" class="nav-link px-2 text-muted">Química</a></li>
+      <li class="nav-item"><a href="http://localhost:3000/artigos/fisica" class="nav-link px-2 text-muted">Física</a></li>
+    </ul>
+  </footer>
+</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
